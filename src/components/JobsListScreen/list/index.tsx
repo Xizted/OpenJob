@@ -57,12 +57,7 @@ const List = () => {
     },
   ]);
 
-  return (
-    <FlatList
-      data={data}
-      renderItem={({ item }) => <Item {...item} />}
-    />
-  );
+  return <FlatList data={data} renderItem={({ item }) => <Item {...item} />} />;
 };
 
 export default List;

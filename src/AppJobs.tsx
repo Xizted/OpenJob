@@ -1,12 +1,12 @@
-import {  View } from 'react-native'
-import List from './components/list'
+import AppProvider from './context/AppProvider';
+import AppContainer from './components/navigation';
 
 const AppJobs = () => {
   return (
-    <View style={{ flex: 1 }}>
-      <List />
-    </View>
-  )
-}
+    <AppProvider>
+      <AppContainer />
+    </AppProvider>
+  );
+};
 
-export default AppJobs
+export default AppJobs;
